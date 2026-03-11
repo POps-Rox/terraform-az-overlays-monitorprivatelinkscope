@@ -24,7 +24,7 @@ variable "deploy_environment" {
 variable "workload_name" {
   description = "Name of the workload_name"
   type        = string
-  default = "ampls"
+  default     = "ampls"
 }
 
 variable "org_name" {
@@ -60,12 +60,12 @@ variable "existing_resource_group_name" {
 
 variable "existing_ampls_private_subnet_id" {
   description = "(Required) ID of the subnet for ampls"
-  default = null
+  default     = null
 }
 
 variable "existing_ampls_virtual_network_id" {
   description = "(Required) ID of the virtual network for ampls"
-  default = null
+  default     = null
 }
 
 variable "linked_log_analytic_workspace_ids" {

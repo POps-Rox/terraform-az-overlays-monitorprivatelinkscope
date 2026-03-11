@@ -1,7 +1,7 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
- resource "azurerm_resource_group" "example-network-rg" {
+resource "azurerm_resource_group" "example-network-rg" {
   name     = "example-network-rg"
   location = var.location
   tags = {

@@ -22,6 +22,6 @@ module "mod_ampls" {
   # Private Endpoint details
   # Resource Group, location, VNet and Subnet details
   # This need to be the same as the VNet and Subnet where the Private Endpoint will be deployed
-  existing_ampls_virtual_network_id     = azurerm_virtual_network.example-vnet.id
-  existing_ampls_private_subnet_id      = azurerm_subnet.example-snet.id
+  existing_ampls_virtual_network_id = azurerm_virtual_network.example-vnet.id
+  existing_ampls_private_subnet_id  = azurerm_subnet.example-snet.id
 }

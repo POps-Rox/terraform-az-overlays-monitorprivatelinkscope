@@ -9,7 +9,7 @@
 output "azurerm_monitor_private_link_scope_id" {
   value       = azurerm_monitor_private_link_scope.main.id
   description = "The ID of the Azure Monitor Private Link Scope."
- }
+}
 
 output "azurerm_monitor_private_link_scope_name" {
   value       = azurerm_monitor_private_link_scope.main.name

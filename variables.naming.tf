@@ -32,29 +32,29 @@ variable "custom_resource_group_name" {
 variable "custom_private_endpoint_name" {
   description = "The name of the custom private endpoint to create. If not set, the name will be generated using the `org_name`, `workload_name`, `deploy_environment` and `environment` variables."
   type        = string
-  default     = null  
+  default     = null
 }
 
 variable "custom_private_dns_zone_name" {
   description = "The name of the custom private dns zone to create. If not set, the name will be generated using the `org_name`, `workload_name`, `deploy_environment` and `environment` variables."
   type        = string
-  default     = null  
+  default     = null
 }
 
 variable "custom_private_service_connection_name" {
   description = "The name of the custom private service connection to create. If not set, the name will be generated using the `org_name`, `workload_name`, `deploy_environment` and `environment` variables."
   type        = string
-  default     = null  
+  default     = null
 }
 
 variable "custom_private_link_service_name" {
   description = "The name of the custom private link service to create. If not set, the name will be generated using the `org_name`, `workload_name`, `deploy_environment` and `environment` variables."
   type        = string
-  default     = null  
+  default     = null
 }
 
 variable "custom_private_dns_a_record_name" {
   description = "The name of the custom private dns a record to create. If not set, the name will be generated using the `org_name`, `workload_name`, `deploy_environment` and `environment` variables."
   type        = string
-  default     = null  
+  default     = null
 }
