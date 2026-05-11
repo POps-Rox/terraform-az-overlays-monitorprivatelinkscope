@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 module "mod_ampls" {
-  #source  = "github.com/POps-Rox/tf-az-overlays-monitorprivatelinkscope"
+  #source  = "github.com/POps-Rox/terraform-az-overlays-monitorprivatelinkscope"
   #version = "x.x.x"
   source = "../../.."
 
