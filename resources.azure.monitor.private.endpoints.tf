@@ -9,6 +9,7 @@ resource "azurerm_private_endpoint" "ampls" {
   location            = local.location
   resource_group_name = local.resource_group_name
   subnet_id           = var.existing_ampls_private_subnet_id
+  tags                = merge(local.default_tags, var.add_tags)
 
   private_dns_zone_group {
     name                 = "ampls-default"
@@ -22,6 +23,5 @@ resource "azurerm_private_endpoint" "ampls" {
     subresource_names              = ["azuremonitor"]
   }
 }
-
 
 

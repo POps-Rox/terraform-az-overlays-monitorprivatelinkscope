@@ -17,7 +17,7 @@ module "mod_ampls" {
   linked_log_analytic_workspace_ids = [azurerm_log_analytics_workspace.example-log.id]
 
   # Private DNS details
-  private_dns_zone_ids = [azurerm_private_dns_zone.example-pdz[*].id]
+  private_dns_zone_ids = values(azurerm_private_dns_zone.example-pdz)[*].id
 
   # Private Endpoint details
   # Resource Group, location, VNet and Subnet details

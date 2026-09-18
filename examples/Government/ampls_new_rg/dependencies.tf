@@ -60,7 +60,7 @@ resource "azurerm_log_analytics_workspace" "example-log" {
 }
 
 resource "azurerm_private_dns_zone" "example-pdz" {
-  for_each            = local.default_private_dns_zones
+  for_each            = toset(local.default_private_dns_zones)
   name                = each.value
   resource_group_name = azurerm_resource_group.example-network-rg.name
   tags = {
