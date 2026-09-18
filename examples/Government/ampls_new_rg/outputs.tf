@@ -1,6 +1,6 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-output "echo_text" {
-  value = module.echo.echo_text
+output "azurerm_monitor_private_link_scope_id" {
+  value = module.mod_ampls.azurerm_monitor_private_link_scope_id
 }

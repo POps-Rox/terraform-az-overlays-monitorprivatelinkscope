@@ -1,3 +1,10 @@
+# Unreleased
+
+Changed
+- Upgrade root `azurerm` constraint to `>= 5.0, < 6.0` and examples to `~> 5.6`.
+- Add mock-provider `terraform test` coverage for naming, resource-group selection, tags, and location passthrough.
+- Apply default tag merging to the private link scope and private endpoint.
+
 # v2.0.0 - 2026-05-11
 
 Changed
